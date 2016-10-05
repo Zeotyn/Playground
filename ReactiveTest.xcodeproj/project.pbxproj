@@ -7,21 +7,50 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B336B3331DA54DBB00066D42 /* RecipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B336B3321DA54DBB00066D42 /* RecipeView.swift */; };
+		B336B33D1DA5503600066D42 /* ReactiveSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B336B3361DA5503600066D42 /* ReactiveSwift.framework */; };
+		B336B33E1DA5503600066D42 /* ReactiveSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B336B3361DA5503600066D42 /* ReactiveSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B336B33F1DA5503600066D42 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B336B3371DA5503600066D42 /* Result.framework */; };
+		B336B3401DA5503600066D42 /* Result.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B336B3371DA5503600066D42 /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B336B3411DA5503600066D42 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B336B3381DA5503600066D42 /* SnapKit.framework */; };
+		B336B3421DA5503600066D42 /* SnapKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B336B3381DA5503600066D42 /* SnapKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B3E5EDFF1DA3933800D11898 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E5EDFE1DA3933800D11898 /* AppDelegate.swift */; };
 		B3E5EE011DA3933800D11898 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E5EE001DA3933800D11898 /* ViewController.swift */; };
-		B3E5EE041DA3933800D11898 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3E5EE021DA3933800D11898 /* Main.storyboard */; };
 		B3E5EE061DA3933800D11898 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3E5EE051DA3933800D11898 /* Assets.xcassets */; };
 		B3E5EE091DA3933800D11898 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3E5EE071DA3933800D11898 /* LaunchScreen.storyboard */; };
+		B3E6E8101DA6921F006F3AB6 /* RecipeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E6E80F1DA6921F006F3AB6 /* RecipeModel.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		B336B3431DA5503600066D42 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				B336B33E1DA5503600066D42 /* ReactiveSwift.framework in Embed Frameworks */,
+				B336B3401DA5503600066D42 /* Result.framework in Embed Frameworks */,
+				B336B3421DA5503600066D42 /* SnapKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		B336B3321DA54DBB00066D42 /* RecipeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeView.swift; sourceTree = "<group>"; };
+		B336B3341DA5503600066D42 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
+		B336B3351DA5503600066D42 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
+		B336B3361DA5503600066D42 /* ReactiveSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveSwift.framework; path = Carthage/Build/iOS/ReactiveSwift.framework; sourceTree = "<group>"; };
+		B336B3371DA5503600066D42 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
+		B336B3381DA5503600066D42 /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Carthage/Build/iOS/SnapKit.framework; sourceTree = "<group>"; };
 		B3E5EDFB1DA3933800D11898 /* ReactiveTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReactiveTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3E5EDFE1DA3933800D11898 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B3E5EE001DA3933800D11898 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		B3E5EE031DA3933800D11898 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B3E5EE051DA3933800D11898 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B3E5EE081DA3933800D11898 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B3E5EE0A1DA3933800D11898 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B3E6E80F1DA6921F006F3AB6 /* RecipeModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,15 +58,31 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B336B33D1DA5503600066D42 /* ReactiveSwift.framework in Frameworks */,
+				B336B33F1DA5503600066D42 /* Result.framework in Frameworks */,
+				B336B3411DA5503600066D42 /* SnapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B336B3441DA5504600066D42 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B336B3341DA5503600066D42 /* Nimble.framework */,
+				B336B3351DA5503600066D42 /* Quick.framework */,
+				B336B3361DA5503600066D42 /* ReactiveSwift.framework */,
+				B336B3371DA5503600066D42 /* Result.framework */,
+				B336B3381DA5503600066D42 /* SnapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B3E5EDF21DA3933800D11898 = {
 			isa = PBXGroup;
 			children = (
+				B336B3441DA5504600066D42 /* Frameworks */,
 				B3E5EDFD1DA3933800D11898 /* ReactiveTest */,
 				B3E5EDFC1DA3933800D11898 /* Products */,
 			);
@@ -56,7 +101,8 @@
 			children = (
 				B3E5EDFE1DA3933800D11898 /* AppDelegate.swift */,
 				B3E5EE001DA3933800D11898 /* ViewController.swift */,
-				B3E5EE021DA3933800D11898 /* Main.storyboard */,
+				B336B3321DA54DBB00066D42 /* RecipeView.swift */,
+				B3E6E80F1DA6921F006F3AB6 /* RecipeModel.swift */,
 				B3E5EE051DA3933800D11898 /* Assets.xcassets */,
 				B3E5EE071DA3933800D11898 /* LaunchScreen.storyboard */,
 				B3E5EE0A1DA3933800D11898 /* Info.plist */,
@@ -74,6 +120,7 @@
 				B3E5EDF71DA3933800D11898 /* Sources */,
 				B3E5EDF81DA3933800D11898 /* Frameworks */,
 				B3E5EDF91DA3933800D11898 /* Resources */,
+				B336B3431DA5503600066D42 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -96,6 +143,7 @@
 				TargetAttributes = {
 					B3E5EDFA1DA3933800D11898 = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = R4HLR9FV49;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -125,7 +173,6 @@
 			files = (
 				B3E5EE091DA3933800D11898 /* LaunchScreen.storyboard in Resources */,
 				B3E5EE061DA3933800D11898 /* Assets.xcassets in Resources */,
-				B3E5EE041DA3933800D11898 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,21 +184,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				B3E5EE011DA3933800D11898 /* ViewController.swift in Sources */,
+				B3E6E8101DA6921F006F3AB6 /* RecipeModel.swift in Sources */,
 				B3E5EDFF1DA3933800D11898 /* AppDelegate.swift in Sources */,
+				B336B3331DA54DBB00066D42 /* RecipeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		B3E5EE021DA3933800D11898 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B3E5EE031DA3933800D11898 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		B3E5EE071DA3933800D11898 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -258,6 +299,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = R4HLR9FV49;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = ReactiveTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = de.zeotyn.de.ReactiveTest;
@@ -270,6 +316,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = R4HLR9FV49;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = ReactiveTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = de.zeotyn.de.ReactiveTest;
@@ -297,6 +348,7 @@
 				B3E5EE0F1DA3933800D11898 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -12,7 +12,13 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
+        let recipeView = RecipeView(frame: self.view.frame)
+        recipeView.baseLabel.text = "Hello"
+        recipeView.flavourLabel.text = "World"
+        recipeView.computeButton.setTitle("compute", for: .normal)
+        recipeView.baseTextField.isHidden = false
+        self.view.addSubview(recipeView)
     }
 
     override func didReceiveMemoryWarning() {

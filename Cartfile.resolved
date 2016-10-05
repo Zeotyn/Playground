@@ -1,0 +1,5 @@
+github "antitypical/Result" "3.0.0"
+github "SnapKit/SnapKit" "3.0.1"
+github "quick/nimble" "v5.0.0"
+github "quick/quick" "v0.10.0"
+github "ReactiveCocoa/ReactiveSwift" "1.0.0-alpha.1"
