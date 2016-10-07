@@ -11,10 +11,16 @@ import Foundation
 class RecipeModel {
     var flavour: Float
     var base: Float
+    var flavourResult:Float
+    var baseResult:Float
+    
+    
 
-    init(flavour : Float, base: Float) {
-        self.base = base
+    init(flavour : Float, base: Float, flavourResult: Float, baseResult: Float) {
         self.flavour = flavour
+        self.base = base
+        self.flavourResult = flavourResult
+        self.baseResult = baseResult
     }
 
 }

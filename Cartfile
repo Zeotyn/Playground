@@ -1,4 +1,4 @@
-github "SnapKit/SnapKit" ~> 3.0
+github "SnapKit/SnapKit" == 3.0.2
 github "ReactiveCocoa/ReactiveSwift"
 github "quick/quick"
 github "quick/nimble"

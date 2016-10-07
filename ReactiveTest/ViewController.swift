@@ -14,9 +14,6 @@ class ViewController: UIViewController {
         super.viewDidLoad()
 
         let recipeView = RecipeView(frame: self.view.frame)
-        recipeView.baseLabel.text = "Hello"
-        recipeView.flavourLabel.text = "World"
-        recipeView.computeButton.setTitle("compute", for: .normal)
         recipeView.baseTextField.isHidden = false
         self.view.addSubview(recipeView)
     }

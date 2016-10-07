@@ -14,12 +14,13 @@ class RecipeView: UIView {
     let flavourLabel = UILabel()
     let baseTextField = UITextField()
     let flavourTextField = UITextField()
-    let computeButton = UIButton()
+    
+    let results = UITextView()
 
     override init(frame: CGRect) {
         super.init(frame: frame)
 
-        [baseLabel, flavourLabel, baseTextField, flavourTextField, computeButton].forEach { (item) in
+        [baseLabel, flavourLabel, baseTextField, flavourTextField, results].forEach { (item) in
             addSubview(item as! UIView)
             if let item = item as? UITextField {
                 item.borderStyle = .roundedRect
@@ -48,17 +49,22 @@ class RecipeView: UIView {
             make.left.equalTo(flavourLabel)
             make.width.equalTo(baseTextField)
         }
-
-        computeButton.snp.makeConstraints { (make) in
+        
+        results.snp.makeConstraints { (make) in
             make.top.equalTo(flavourTextField).offset(50)
             make.left.equalTo(flavourTextField)
-            make.width.equalTo(flavourTextField).dividedBy(2)
+            make.width.equalTo(flavourTextField).multipliedBy(1.5)
+            make.height.equalTo(flavourTextField).multipliedBy(5)
         }
-
-        computeButton.backgroundColor = .black
+        configureView()
     }
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    func configureView() {
+        self.baseLabel.text = "Base:"
+        self.flavourLabel.text = "Flavour:"
     }
 }
