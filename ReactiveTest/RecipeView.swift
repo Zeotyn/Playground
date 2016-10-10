@@ -12,10 +12,10 @@ import SnapKit
 class RecipeView: UIView {
     let baseLabel = UILabel()
     let flavourLabel = UILabel()
-    let baseTextField = UITextField()
-    let flavourTextField = UITextField()
+    let baseTextField = MyTextField()
+    let flavourTextField = MyTextField()
     
-    let results = UITextView()
+    let results = MyTextView()
 
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -26,7 +26,6 @@ class RecipeView: UIView {
                 item.borderStyle = .roundedRect
             }
         }
-
 
         baseLabel.snp.makeConstraints { (make) in
             make.top.equalTo(self).offset(20)
@@ -66,5 +65,16 @@ class RecipeView: UIView {
     func configureView() {
         self.baseLabel.text = "Base:"
         self.flavourLabel.text = "Flavour:"
+        self.baseTextField.keyboardType = .decimalPad
+        self.flavourTextField.keyboardType = .decimalPad
     }
 }
+
+protocol RecipeViewDataType {
+    var flavourTextField: Float { get }
+    var baseTextField: Float { get }
+}
+
+//extension RecipeView: RecipeViewDataType {
+//    var
+//}

@@ -7,14 +7,18 @@
 //
 
 import Foundation
+import ReactiveSwift
 
 class RecipeViewModel {
-    var base:Float = 0.0
-    var flavour:Float = 0.0
+    var base = MutableProperty<Float>(0.0)
+    var flavour = MutableProperty<Float>(0.0)
     
-    var result:String {
-        get {
-            return "Nothing to do here..."
+    var result = MutableProperty<String>("")
+    
+    init() {
+        
+        result <~ base.producer.combineLatest(with: flavour.producer).map { (base, flavour) in
+            return "\(base + flavour)"
         }
     }
 }

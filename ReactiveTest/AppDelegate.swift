@@ -19,7 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow(frame: UIScreen.main.bounds)
         if let window = window {
             window.backgroundColor = .white
-            window.rootViewController = ViewController()
+            window.rootViewController = RecipeViewController(with: RecipeViewModel())
             window.makeKeyAndVisible()
         }
         return true
